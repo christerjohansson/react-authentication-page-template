@@ -1,6 +1,6 @@
-# React Auth Template
+# React based authentication page template
 
-This is my starter template for Login, Register and Forgot Password using ReactJS with simple form validation.
+This is my starter template for Login, Register and Forgot Password using ReactJS with simple form validation. Upon entering your credentials, the app will display a simple alert if you are logged in.
 
 ## Installation
 Clone this repository

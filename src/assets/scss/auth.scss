@@ -1,95 +1,113 @@
+/*
+ Copyright (c) 2021 Christer Johansson of Sweden Inc.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
 @import "./variables";
 
-@import '~@fortawesome/fontawesome-free/css/all.css';
-@import '~bootstrap/scss/bootstrap.scss';
-
-
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/scss/bootstrap.scss";
 
 html,
 body,
 #root {
-    height: 100%;
+  height: 100%;
 }
 
 .btn {
-
-    &:focus,
-    &:active {
-        outline: none !important;
-        box-shadow: none !important;
-    }
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 a {
-
-    &:focus,
-    &:active {
-        outline: none !important;
-        box-shadow: none !important;
-    }
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
-.auth{
-	.auth-background-holder {
-		height: 100vh;
-		min-height: 100%;
-	}
+.auth {
+  .auth-background-holder {
+    height: 100vh;
+    min-height: 100%;
+  }
 }
 
-.auth-main-col, .auth-background-col{
-	position: relative;
+.auth-main-col,
+.auth-background-col {
+  position: relative;
 }
 
 .auth-main-col {
-	margin: auto;
+  margin: auto;
 }
 
 .auth-background-col {
-	background: rgba($theme-text-color-primary, 0.6);
+  background: rgba($theme-text-color-primary, 0.6);
 }
 
 .auth-background-mask {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	z-index: 10;
-	background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .auth-wrapper {
-	background: white;
-	height: 100vh;
-	
-	.auth-body {
-		width: 360px;
-	}
-	
-	.auth-heading {
-		font-size: 1.5rem;
-	}
-	
-	.auth-option {
-		font-size: 0.875rem;
-		> a {
-			color: $theme-text-color-secondary
-		}
-	}
+  background: white;
+  height: 100vh;
 
-	.forgot-password {
-		> a {
-			color: $theme-text-color-secondary
-		}
-	}
+  .auth-body {
+    width: 360px;
+  }
 
-	input:focus {
-		box-shadow: none;
-	}
+  .auth-heading {
+    font-size: 1.5rem;
+  }
+
+  .auth-option {
+    font-size: 0.875rem;
+    > a {
+      color: $theme-text-color-secondary;
+    }
+  }
+
+  .forgot-password {
+    > a {
+      color: $theme-text-color-secondary;
+    }
+  }
+
+  input:focus {
+    box-shadow: none;
+  }
 }
 
-@media (max-width: 767.98px) { 
-	.auth-background-col {
-		display: none;
-	}	
+@media (max-width: 767.98px) {
+  .auth-background-col {
+    display: none;
+  }
 }
