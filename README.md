@@ -9,7 +9,7 @@ Based on React v17.
 ## Installation
 Clone this repository
 ```bash
-git clone https://github.com/erinrugas/react-auth-template.git
+git clone https://github.com/christerjohansson/react-authentication-page-template.git
 ```
 
 go to react-auth-template directory.
@@ -25,7 +25,7 @@ Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
 The page will reload if you make any changes on the code
 
-### `npm build`
+### `npm run build`
 
 This will build the app for production.
 
