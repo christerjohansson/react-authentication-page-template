@@ -3,6 +3,9 @@
 This is my starter template for Login, Register and Forgot Password using ReactJS with simple form validation. Upon entering your credentials, the app will display a simple alert if you are logged in.
 Based on React v17.
 
+## Screenshot
+![Screenshot of login page](src/assets/screenshot.png "Screenshot of login page")
+
 ## Installation
 Clone this repository
 ```bash
